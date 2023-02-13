@@ -2132,7 +2132,8 @@ function useHistoryReducer() {
                                     alerts: [],
                                     stateEvents: [],
                                     roles: { ...history.states[prevState].roles },
-                                    dead: { ...history.states[prevState].dead }
+                                    dead: { ...history.states[prevState].dead },
+                                    extraInfo: { ...action.state.extraInfo }
                                 }
                             }
                         },

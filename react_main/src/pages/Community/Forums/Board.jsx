@@ -135,7 +135,7 @@ export default function Board(props) {
 					</div>
 					<div className="column-content">
 						<div className="column-item center-item">
-							<Time millisec={Date.now() - thread.postDate} />
+							<Time showExact={true} millisec={Date.now() - thread.postDate} />
 							{` ago`}
 						</div>
 					</div>

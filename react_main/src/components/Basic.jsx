@@ -39,6 +39,16 @@ export function PanelGrid(props) {
 export function Time(props) {
 	var unit = "millisecond";
 	var value = props.millisec;
+
+	var showExact = props.showExact;
+	if (showExact) {
+		console.log(props.millisec)
+		// convert millisec to the exact date format
+		// there are formatting algorithms easily googled
+		// TODO
+		return;
+	}
+
 	var suffix = props.suffix || "";
 	var minSec = props.minSec;
 
